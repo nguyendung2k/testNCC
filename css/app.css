@@ -231,6 +231,7 @@ main {
   display: flex;
   width: 100%;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 .header-image {
   margin: auto;
