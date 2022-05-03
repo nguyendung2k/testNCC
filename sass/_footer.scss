@@ -1,0 +1,11 @@
+.footer{
+    padding-left: 120px;
+    @include tablet(768px, 1023px) {
+       padding-left:50px;
+    
+    }
+
+    @include maxWidth(767px) {
+            padding-left: 10px;
+    }
+}

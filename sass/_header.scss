@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    &-image{
+        margin:auto
+    }
+
+    @include tablet(768px, 1023px) {
+       padding-top:20px;
+    }
+
+    @include maxWidth(767px) {
+        padding-bottom: 30px;
+    }
+}

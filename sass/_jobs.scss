@@ -1,0 +1,51 @@
+.jobs{
+    padding-top: 40px;  
+    padding-bottom:100px;
+
+    @include maxWidth(767px) {
+        padding-bottom: 50px;
+    }
+
+    &-item{
+        @include maxWidth(767px) {
+           margin-bottom: 20px;
+        }
+    }
+
+    // &-item{
+    //     width: 470px;
+    // }
+    &-list{
+        display: flex;
+        gap: 0 50px;
+
+        @include tablet(768px, 1023px) {
+          display :grid;
+            grid-template-columns: 1fr;
+            grid-gap: 50px 50px;
+        }
+
+        @include maxWidth(767px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 0 50px;
+        }
+    }
+
+    &-title{
+        margin-bottom:18px;
+        font-size: 24px;
+    }
+
+    &-des{
+        float:none;
+        line-height:1.5;
+        font-size: 14px;
+    }
+    
+    &-image{
+        margin-right:16px;
+        margin-bottom:6px;
+        float: left;
+    }
+}

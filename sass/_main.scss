@@ -1,0 +1,35 @@
+.main{
+    width: 1768px;
+    height: 100vh;
+    margin-left: 152px;
+
+    @include maxWidth(767px){
+        margin-left:0
+    }
+
+    &-content{
+        margin: 0 129px;
+        position: relative;
+        top: 0;
+        right: 0;
+        @include tablet(768px, 1023px) {
+            margin: 0 50px;
+
+        }
+    
+        @include maxWidth(767px) {
+           margin: 0 10px;
+        }
+
+    }
+
+    @include tablet(768px, 1023px) {
+        width: calc(100% - 150px);
+        
+    }
+
+    @include maxWidth(767px) {
+        width: 100%;
+        padding-top: 66px;
+    }
+}
